@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memory-talk"
+version = "0.1.0"
+description = "Designing Memory for AI Applications in Python — PyCon Italia 2026"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Özge Çinko" }]
+keywords = ["llm", "ai", "memory", "agents", "python"]
+dependencies = []  # the core has zero runtime dependencies (stdlib only)
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/ozgecinko/memory-talk"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
