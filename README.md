@@ -5,6 +5,7 @@ Slides and materials from my conference talks and tutorials.
 ## Website
 
 This repository includes a static GitHub Pages site for browsing the slide decks in one place.
+You can view at https://ozgecinko.github.io/conferences/.
 
 | Event                  | Date                | Location               | Talk                                                                                                                      |
 | ---------------------- | ------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
