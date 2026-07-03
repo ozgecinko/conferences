@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Conference talks, slide decks, and materials by Ozge Cinko."
+    />
+    <title>Conference Slides | Ozge Cinko</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="./" aria-label="Conference slides home">
+          <span class="brand-mark">OC</span>
+          <span>Conference Slides</span>
+        </a>
+        <div class="nav-links">
+          <a href="#talks">Talks</a>
+          <a href="https://github.com/ozgecinko/conferences" rel="noreferrer">GitHub</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <h1>Conference materials</h1>
+        <p class="intro">
+          Slides, decks, and related notes from my talks.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#talks">Browse talks</a>
+          <a class="button ghost" href="https://github.com/ozgecinko/conferences#readme">View repository notes</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Talk filters">
+        <label class="search">
+          <span>Search talks</span>
+          <input
+            id="search"
+            type="search"
+            placeholder="Search by title, event, topic..."
+            autocomplete="off"
+          />
+        </label>
+        <div class="filters" id="filters" aria-label="Topic filters"></div>
+      </section>
+
+      <section class="layout" id="talks">
+        <aside class="talk-list" aria-label="Talk list">
+          <div class="section-heading">
+            <p class="eyebrow">Archive</p>
+            <h2>All talks</h2>
+          </div>
+          <div class="talk-cards" id="talkCards"></div>
+        </aside>
+
+        <section class="viewer" aria-live="polite">
+          <div class="viewer-copy">
+            <p class="eyebrow" id="selectedMeta"></p>
+            <h2 id="selectedTitle"></h2>
+            <p id="selectedDescription"></p>
+            <div class="tag-row" id="selectedTags"></div>
+            <div class="material-links" id="selectedLinks"></div>
+          </div>
+          <div class="slide-frame">
+            <iframe
+              id="slideViewer"
+              title="Slide deck preview"
+              loading="lazy"
+            ></iframe>
+            <div class="frame-fallback">
+              PDF preview is not available in this browser.
+              <a id="fallbackLink" href="#">Open the slides instead.</a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Made for GitHub Pages.</span>
+      <a href="./LICENSE">MIT License</a>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

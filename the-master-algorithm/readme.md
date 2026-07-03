@@ -4,7 +4,7 @@ This lightning talk explores the idea of a master algorithm and uses it as a pra
 
 ## Presented At
 
-- PyData Amsterdam 2026, Amsterdam
+- PyCon Lithuania 2026, Vilnius, April 10, 2026
 
 ## Materials
 
